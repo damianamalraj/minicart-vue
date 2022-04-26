@@ -5,8 +5,8 @@
       <h4>{{ product.name }}</h4>
     </div>
     <div class="price">
-      <button>Buy</button>
-      <p>{{ product.price }}</p>
+      <button @click="addToCart(product)">Buy</button>
+      <p>$ {{ product.price }}</p>
     </div>
   </div>
 </template>
@@ -17,6 +17,11 @@ export default {
     return {};
   },
   props: ["product"],
+  methods: {
+    addToCart(product) {
+      this.$store.commit("addToCart", product);
+    },
+  },
 };
 </script>
 

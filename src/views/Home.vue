@@ -15,6 +15,7 @@ export default {
   mounted() {
     this.products = this.$store.state.products;
   },
+
   components: { Product },
 };
 </script>
