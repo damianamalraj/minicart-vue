@@ -1,5 +1,7 @@
 # vaimo-minicart-vue
 
+https://damianamalraj.github.io/vaimo-minicart-vue/
+
 ## Project setup
 
 ```
